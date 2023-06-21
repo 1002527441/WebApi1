@@ -9,18 +9,18 @@ public class TestAppService:IDynamicApiController
     {
             this._testService  = testService;
     }
-    public async Task<string> AddTest(string name)
+    public async Task<string> Add(string name)
     {
        return await _testService.AddTest(name);
     }
 
 
-    public async Task<string> DeleteById(string Id)
+    public async Task<string> Delete(string Id)
     {
         return await _testService.DeleteById(Id);
     }
 
-    public async Task<string> GetById(string Id)
+    public async Task<string> Get(string Id)
     {
         return await _testService.GetById(Id);
     }
